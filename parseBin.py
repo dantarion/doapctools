@@ -56,6 +56,6 @@ def parseBin(filename):
             out.write(data[dds:])
             out.close()
 for filename in os.listdir("../"):
-    if filename[-3:] == "lnk":
-        dumpTextures(filename)
+    if filename[-3:] == "bin":
+        parseBin(filename)
 #parseBin("chara_common.bin")
